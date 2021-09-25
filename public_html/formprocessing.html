@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <h1>Please Fill Your Details</h1>
+            <label>First Name</label>
+            <input type="text" id="first_name" />
+            <br/>
+
+            <label>Second Name Name</label>
+            <input type="text" id="second_name" />
+            <br/>
+
+            <label>Other Names</label>
+            <input type="text" id ="other_names" />
+            <br/>
+
+            <label>Email Address</label>
+            <input type="email" id="email_address"/>
+            <br/>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone_number" />
+            <br/>
+            <button onclick="formSubmit()">Submit</button>
+            <!-- <input type="submit" value="Submit"/> -->
+        </form>
+        <script>
+            function captureUserInput(input){
+                alert(input);
+            }
+
+            function testDoubleClick(){
+                alert("You Double Clicked Me");
+            }
+
+            function formSubmit(){
+                let firstName=document.getElementById("first_name").value;
+                let secondName=document.getElementById("second_name").value;
+                let otherNames=document.getElementById("other_names").value;
+                let emailAddress=document.getElementById("email_address").value;
+                let phoneNumber=document.getElementById("phone_number").value;
+                if(firstName==null|| firstName==""){
+                    alert("Please Provide a Valid First Name");
+                }
+                if(secondName==null|| secondName==""){
+                    alert("Please Provide a Valid Second Name");
+                }
+            }
+
+        </script>
+    </body>
+
+</html>
